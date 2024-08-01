@@ -1,0 +1,47 @@
+.testimonial{
+    padding-top: 50px;
+    text-align: center;
+    background: #56B2801A;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    h2{
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+    h3{
+        color: #5E6E89;
+        font-weight: 500;
+    }
+    &__wrapp{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 20px;
+        @media (max-width:900px) {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    &__card{
+        width: 30%;
+        height: 290px;
+        background: #fff9;
+        box-shadow: 5px 5px 5px #f0eeeec8;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        @media (max-width:900px) {
+            width: 100%;
+        }
+        .star{
+            color: rgba(0, 128, 0, 0.467);
+            font-size: 25px;
+        }        
+        img{
+            width: 120px;
+            height: 120px;
+        }
+    }
+}

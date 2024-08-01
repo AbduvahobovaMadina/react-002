@@ -1,0 +1,60 @@
+.clean{
+    // margin-top: 70px;
+    background: #F7F8FA;
+    margin-top: 130px;
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        @media (max-width:900px) {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    &__text{
+        display: flex;
+        margin-top: 80px;
+        flex-direction: column;
+        gap: 20px;
+        width: 40%;
+        @media (max-width:900px) {
+            width: 100%;
+        }
+        h2{
+            width: 80%;
+            font-size: 50px;
+            font-weight: 500;
+        }
+        h3{
+            font-weight: 500;
+            color: #56B280;
+        }
+        ul{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        li{
+            align-items: center;
+            gap: 6px;
+            display: flex;
+        }
+        button{
+            margin-top: 20px;
+            width: 170px;
+            height: 40px;
+            border: none;
+            background-color: #56B280;
+            border-radius: 4px;
+            color: #fff;
+            font-weight: 600;
+            transition: .3s;
+            @media (max-width:570px) {
+                width: 100px;
+                font-size: 12px;
+            }
+            &:hover{
+                background: #56b27f90;
+            }
+        }
+    }
+}
