@@ -1,0 +1,51 @@
+.header{
+    width: 100%;
+    height: 70px;
+    border-bottom: 1px solid #ddd;
+    position: sticky;
+    background: #f6f6f6;
+    backdrop-filter: blur(10px);
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center ;
+       
+        img{
+            width: 130px;
+            height: 60px;
+        }
+        &__collection{
+            display: flex;
+            gap: 30px;
+            font-size: 18px;
+            align-items: center;
+            @media (max-width:900px) {
+                display: none;
+            }
+        }
+        &__item:hover{
+            cursor: pointer;
+            color: gray;
+        }
+        &__item select{
+            border: none;
+            background: transparent;
+            outline: none;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        .icon{
+            display: flex;
+            gap: 20px;
+            font-size: 25px;
+            cursor: pointer;
+            .user:hover{
+                color: gray;
+            }
+            .cart:hover{
+                color: gray;
+            }
+        }
+
+    }
+}
